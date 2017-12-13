@@ -24,7 +24,7 @@
 
 					<div class="search">
 						<form action="index.html" method="post">
-						<input type="text" id="search" name="search" placeholder="search the photo gallery" data-list=".list">
+						<input type="text" id="search" class="search-game" name="search" placeholder="search the photo gallery" data-list=".list">
 							
 						</form>
 
@@ -107,16 +107,15 @@
 				</footer>
 
 
-				
+
 				<script src="js/jquery-3.2.1.min.js"></script>
-				<script src="js/jquery.hideseek.min.js"></script>
+				<script src="js/e-search.js"></script>
 			<!--	<script src="js/main.js"></script>  -->
 				<script src="js/lightbox-plus-jquery.js"></script>
+				
 				<script type="text/javascript">
-    	     $(document).ready(function() {
-			$('#search').hideseek();
-});
-    </script>
+    	     		$('.search-game').search();
+   				 </script>
 				
 		</body>
 
