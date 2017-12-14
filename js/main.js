@@ -4,7 +4,7 @@
 	const search = document.querySelector("#search");
 
 			
-	const photoDiv = document.querySelectorAll(".photos");
+	const photoDivs = document.querySelectorAll(".photos");
 
 
 			search.addEventListener('keyup', () => { 
