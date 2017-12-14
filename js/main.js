@@ -3,9 +3,13 @@
 
 	const search = document.querySelector("#search");
 
-	console.log(search);
+			
+	const photoDiv = document.querySelectorAll(".photos");
 
-	var pictures = document.querySelectorAll(".photos");
 
-	console.log(pictures);
+			search.addEventListener('keyup', () => { 
+
+			});
+
+	
 
