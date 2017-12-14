@@ -1,7 +1,11 @@
-$(".search-game").search();
 
-$().search(function(){
+	// declare variables
 
+	const search = document.querySelector("#search");
 
-}, 3000);
+	console.log(search);
+
+	var pictures = document.querySelectorAll(".photos");
+
+	console.log(pictures);
 
