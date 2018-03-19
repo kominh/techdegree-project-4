@@ -1,15 +1,25 @@
 
-	// declare variables
+function imgSearch() {
+	//Declare variables
 
-	const search = document.querySelector("#search");
+	var caption, input, filter, ul, li, a;
+	input = document.getElementById('search');
+	filter = input.value.toLowerCase();
+	ul = document.getElementById('myUL');
+	li = document.getElementsByTagName('li');
 
-			
-	const photoDivs = document.querySelectorAll(".photos");
+	//Loop through all list items, and hide those who don't match the search query
+
+	for (i = 0; i < li.length; i++) {
+		caption = li[i].getAttribute("data-title");
+		if (caption.toLowerCase().indexOf(filter) > -1) {
+				li[i].style.display ="";
+				} else { 
+					li[i].style.display ="none";
+				}
+			}	
+	}
 
 
-			search.addEventListener('keyup', () => { 
 
-			});
-
-	
-
+  
